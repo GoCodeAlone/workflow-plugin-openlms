@@ -1,0 +1,38 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+      - uses: goreleaser/goreleaser-action@v6
+        with:
+          version: "~> v2"
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Sync manifest to registry
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.REGISTRY_PAT }}
+        run: |
+          git clone https://x-access-token:${GH_TOKEN}@github.com/GoCodeAlone/workflow-registry.git /tmp/registry
+          mkdir -p /tmp/registry/plugins/openlms
+          TAG=${GITHUB_REF#refs/tags/}
+          VERSION=${TAG#v}
+          jq --arg v "$VERSION" '.version = $v' plugin.json > /tmp/registry/plugins/openlms/manifest.json
+          cd /tmp/registry
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add plugins/openlms/manifest.json
+          git diff --cached --quiet || git commit -m "chore: sync openlms plugin manifest v${VERSION}"
+          git push
