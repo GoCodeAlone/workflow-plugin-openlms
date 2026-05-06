@@ -1,0 +1,1011 @@
+{
+  "version": "1",
+  "contracts": [
+    {
+      "kind": "module",
+      "type": "openlms.provider",
+      "mode": "strict",
+      "config": "openlms.v1.ProviderConfig"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_get_assignments",
+      "mode": "strict",
+      "config": "openlms.v1.AssignGetAssignmentsConfig",
+      "input": "openlms.v1.AssignGetAssignmentsInput",
+      "output": "openlms.v1.AssignGetAssignmentsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_get_grades",
+      "mode": "strict",
+      "config": "openlms.v1.AssignGetGradesConfig",
+      "input": "openlms.v1.AssignGetGradesInput",
+      "output": "openlms.v1.AssignGetGradesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_get_submissions",
+      "mode": "strict",
+      "config": "openlms.v1.AssignGetSubmissionsConfig",
+      "input": "openlms.v1.AssignGetSubmissionsInput",
+      "output": "openlms.v1.AssignGetSubmissionsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_save_grade",
+      "mode": "strict",
+      "config": "openlms.v1.AssignSaveGradeConfig",
+      "input": "openlms.v1.AssignSaveGradeInput",
+      "output": "openlms.v1.AssignSaveGradeOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_save_submission",
+      "mode": "strict",
+      "config": "openlms.v1.AssignSaveSubmissionConfig",
+      "input": "openlms.v1.AssignSaveSubmissionInput",
+      "output": "openlms.v1.AssignSaveSubmissionOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_assign_submit_for_grading",
+      "mode": "strict",
+      "config": "openlms.v1.AssignSubmitForGradingConfig",
+      "input": "openlms.v1.AssignSubmitForGradingInput",
+      "output": "openlms.v1.AssignSubmitForGradingOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_badge_get_user_badges",
+      "mode": "strict",
+      "config": "openlms.v1.BadgeGetUserBadgesConfig",
+      "input": "openlms.v1.BadgeGetUserBadgesInput",
+      "output": "openlms.v1.BadgeGetUserBadgesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_calendar_create_events",
+      "mode": "strict",
+      "config": "openlms.v1.CalendarCreateEventsConfig",
+      "input": "openlms.v1.CalendarCreateEventsInput",
+      "output": "openlms.v1.CalendarCreateEventsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_calendar_delete_events",
+      "mode": "strict",
+      "config": "openlms.v1.CalendarDeleteEventsConfig",
+      "input": "openlms.v1.CalendarDeleteEventsInput",
+      "output": "openlms.v1.CalendarDeleteEventsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_calendar_get_day_view",
+      "mode": "strict",
+      "config": "openlms.v1.CalendarGetDayViewConfig",
+      "input": "openlms.v1.CalendarGetDayViewInput",
+      "output": "openlms.v1.CalendarGetDayViewOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_calendar_get_events",
+      "mode": "strict",
+      "config": "openlms.v1.CalendarGetEventsConfig",
+      "input": "openlms.v1.CalendarGetEventsInput",
+      "output": "openlms.v1.CalendarGetEventsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_calendar_get_monthly_view",
+      "mode": "strict",
+      "config": "openlms.v1.CalendarGetMonthlyViewConfig",
+      "input": "openlms.v1.CalendarGetMonthlyViewInput",
+      "output": "openlms.v1.CalendarGetMonthlyViewOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_call_function",
+      "mode": "strict",
+      "config": "openlms.v1.CallFunctionConfig",
+      "input": "openlms.v1.CallFunctionInput",
+      "output": "openlms.v1.CallFunctionOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_add_members",
+      "mode": "strict",
+      "config": "openlms.v1.CohortAddMembersConfig",
+      "input": "openlms.v1.CohortAddMembersInput",
+      "output": "openlms.v1.CohortAddMembersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_create",
+      "mode": "strict",
+      "config": "openlms.v1.CohortCreateConfig",
+      "input": "openlms.v1.CohortCreateInput",
+      "output": "openlms.v1.CohortCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_delete",
+      "mode": "strict",
+      "config": "openlms.v1.CohortDeleteConfig",
+      "input": "openlms.v1.CohortDeleteInput",
+      "output": "openlms.v1.CohortDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_delete_members",
+      "mode": "strict",
+      "config": "openlms.v1.CohortDeleteMembersConfig",
+      "input": "openlms.v1.CohortDeleteMembersInput",
+      "output": "openlms.v1.CohortDeleteMembersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_get",
+      "mode": "strict",
+      "config": "openlms.v1.CohortGetConfig",
+      "input": "openlms.v1.CohortGetInput",
+      "output": "openlms.v1.CohortGetOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_cohort_search",
+      "mode": "strict",
+      "config": "openlms.v1.CohortSearchConfig",
+      "input": "openlms.v1.CohortSearchInput",
+      "output": "openlms.v1.CohortSearchOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_add_to_course",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyAddToCourseConfig",
+      "input": "openlms.v1.CompetencyAddToCourseInput",
+      "output": "openlms.v1.CompetencyAddToCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_create",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyCreateConfig",
+      "input": "openlms.v1.CompetencyCreateInput",
+      "output": "openlms.v1.CompetencyCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_create_framework",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyCreateFrameworkConfig",
+      "input": "openlms.v1.CompetencyCreateFrameworkInput",
+      "output": "openlms.v1.CompetencyCreateFrameworkOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_create_plan",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyCreatePlanConfig",
+      "input": "openlms.v1.CompetencyCreatePlanInput",
+      "output": "openlms.v1.CompetencyCreatePlanOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_delete",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyDeleteConfig",
+      "input": "openlms.v1.CompetencyDeleteInput",
+      "output": "openlms.v1.CompetencyDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_grade",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyGradeConfig",
+      "input": "openlms.v1.CompetencyGradeInput",
+      "output": "openlms.v1.CompetencyGradeOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_list",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyListConfig",
+      "input": "openlms.v1.CompetencyListInput",
+      "output": "openlms.v1.CompetencyListOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_list_frameworks",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyListFrameworksConfig",
+      "input": "openlms.v1.CompetencyListFrameworksInput",
+      "output": "openlms.v1.CompetencyListFrameworksOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_competency_list_plans",
+      "mode": "strict",
+      "config": "openlms.v1.CompetencyListPlansConfig",
+      "input": "openlms.v1.CompetencyListPlansInput",
+      "output": "openlms.v1.CompetencyListPlansOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_completion_get_activities_status",
+      "mode": "strict",
+      "config": "openlms.v1.CompletionGetActivitiesStatusConfig",
+      "input": "openlms.v1.CompletionGetActivitiesStatusInput",
+      "output": "openlms.v1.CompletionGetActivitiesStatusOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_completion_get_course_status",
+      "mode": "strict",
+      "config": "openlms.v1.CompletionGetCourseStatusConfig",
+      "input": "openlms.v1.CompletionGetCourseStatusInput",
+      "output": "openlms.v1.CompletionGetCourseStatusOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_completion_mark_self_completed",
+      "mode": "strict",
+      "config": "openlms.v1.CompletionMarkSelfCompletedConfig",
+      "input": "openlms.v1.CompletionMarkSelfCompletedInput",
+      "output": "openlms.v1.CompletionMarkSelfCompletedOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_completion_update_activity",
+      "mode": "strict",
+      "config": "openlms.v1.CompletionUpdateActivityConfig",
+      "input": "openlms.v1.CompletionUpdateActivityInput",
+      "output": "openlms.v1.CompletionUpdateActivityOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_create",
+      "mode": "strict",
+      "config": "openlms.v1.CourseCreateConfig",
+      "input": "openlms.v1.CourseCreateInput",
+      "output": "openlms.v1.CourseCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_create_categories",
+      "mode": "strict",
+      "config": "openlms.v1.CourseCreateCategoriesConfig",
+      "input": "openlms.v1.CourseCreateCategoriesInput",
+      "output": "openlms.v1.CourseCreateCategoriesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_delete",
+      "mode": "strict",
+      "config": "openlms.v1.CourseDeleteConfig",
+      "input": "openlms.v1.CourseDeleteInput",
+      "output": "openlms.v1.CourseDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_delete_categories",
+      "mode": "strict",
+      "config": "openlms.v1.CourseDeleteCategoriesConfig",
+      "input": "openlms.v1.CourseDeleteCategoriesInput",
+      "output": "openlms.v1.CourseDeleteCategoriesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_duplicate",
+      "mode": "strict",
+      "config": "openlms.v1.CourseDuplicateConfig",
+      "input": "openlms.v1.CourseDuplicateInput",
+      "output": "openlms.v1.CourseDuplicateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_get",
+      "mode": "strict",
+      "config": "openlms.v1.CourseGetConfig",
+      "input": "openlms.v1.CourseGetInput",
+      "output": "openlms.v1.CourseGetOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_get_by_field",
+      "mode": "strict",
+      "config": "openlms.v1.CourseGetByFieldConfig",
+      "input": "openlms.v1.CourseGetByFieldInput",
+      "output": "openlms.v1.CourseGetByFieldOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_get_categories",
+      "mode": "strict",
+      "config": "openlms.v1.CourseGetCategoriesConfig",
+      "input": "openlms.v1.CourseGetCategoriesInput",
+      "output": "openlms.v1.CourseGetCategoriesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_get_contents",
+      "mode": "strict",
+      "config": "openlms.v1.CourseGetContentsConfig",
+      "input": "openlms.v1.CourseGetContentsInput",
+      "output": "openlms.v1.CourseGetContentsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_search",
+      "mode": "strict",
+      "config": "openlms.v1.CourseSearchConfig",
+      "input": "openlms.v1.CourseSearchInput",
+      "output": "openlms.v1.CourseSearchOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_course_update",
+      "mode": "strict",
+      "config": "openlms.v1.CourseUpdateConfig",
+      "input": "openlms.v1.CourseUpdateInput",
+      "output": "openlms.v1.CourseUpdateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_get_course_methods",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolGetCourseMethodsConfig",
+      "input": "openlms.v1.EnrolGetCourseMethodsInput",
+      "output": "openlms.v1.EnrolGetCourseMethodsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_get_enrolled_users",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolGetEnrolledUsersConfig",
+      "input": "openlms.v1.EnrolGetEnrolledUsersInput",
+      "output": "openlms.v1.EnrolGetEnrolledUsersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_get_user_courses",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolGetUserCoursesConfig",
+      "input": "openlms.v1.EnrolGetUserCoursesInput",
+      "output": "openlms.v1.EnrolGetUserCoursesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_manual_enrol",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolManualEnrolConfig",
+      "input": "openlms.v1.EnrolManualEnrolInput",
+      "output": "openlms.v1.EnrolManualEnrolOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_manual_unenrol",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolManualUnenrolConfig",
+      "input": "openlms.v1.EnrolManualUnenrolInput",
+      "output": "openlms.v1.EnrolManualUnenrolOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_enrol_self_enrol",
+      "mode": "strict",
+      "config": "openlms.v1.EnrolSelfEnrolConfig",
+      "input": "openlms.v1.EnrolSelfEnrolInput",
+      "output": "openlms.v1.EnrolSelfEnrolOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_file_get_files",
+      "mode": "strict",
+      "config": "openlms.v1.FileGetFilesConfig",
+      "input": "openlms.v1.FileGetFilesInput",
+      "output": "openlms.v1.FileGetFilesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_file_upload",
+      "mode": "strict",
+      "config": "openlms.v1.FileUploadConfig",
+      "input": "openlms.v1.FileUploadInput",
+      "output": "openlms.v1.FileUploadOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_add_discussion",
+      "mode": "strict",
+      "config": "openlms.v1.ForumAddDiscussionConfig",
+      "input": "openlms.v1.ForumAddDiscussionInput",
+      "output": "openlms.v1.ForumAddDiscussionOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_add_post",
+      "mode": "strict",
+      "config": "openlms.v1.ForumAddPostConfig",
+      "input": "openlms.v1.ForumAddPostInput",
+      "output": "openlms.v1.ForumAddPostOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_delete_post",
+      "mode": "strict",
+      "config": "openlms.v1.ForumDeletePostConfig",
+      "input": "openlms.v1.ForumDeletePostInput",
+      "output": "openlms.v1.ForumDeletePostOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.ForumGetByCourseConfig",
+      "input": "openlms.v1.ForumGetByCourseInput",
+      "output": "openlms.v1.ForumGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_get_discussions",
+      "mode": "strict",
+      "config": "openlms.v1.ForumGetDiscussionsConfig",
+      "input": "openlms.v1.ForumGetDiscussionsInput",
+      "output": "openlms.v1.ForumGetDiscussionsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_forum_get_posts",
+      "mode": "strict",
+      "config": "openlms.v1.ForumGetPostsConfig",
+      "input": "openlms.v1.ForumGetPostsInput",
+      "output": "openlms.v1.ForumGetPostsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_glossary_add_entry",
+      "mode": "strict",
+      "config": "openlms.v1.GlossaryAddEntryConfig",
+      "input": "openlms.v1.GlossaryAddEntryInput",
+      "output": "openlms.v1.GlossaryAddEntryOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_glossary_delete_entry",
+      "mode": "strict",
+      "config": "openlms.v1.GlossaryDeleteEntryConfig",
+      "input": "openlms.v1.GlossaryDeleteEntryInput",
+      "output": "openlms.v1.GlossaryDeleteEntryOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_glossary_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.GlossaryGetByCourseConfig",
+      "input": "openlms.v1.GlossaryGetByCourseInput",
+      "output": "openlms.v1.GlossaryGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_glossary_get_entries",
+      "mode": "strict",
+      "config": "openlms.v1.GlossaryGetEntriesConfig",
+      "input": "openlms.v1.GlossaryGetEntriesInput",
+      "output": "openlms.v1.GlossaryGetEntriesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_grade_get_grade_items",
+      "mode": "strict",
+      "config": "openlms.v1.GradeGetGradeItemsConfig",
+      "input": "openlms.v1.GradeGetGradeItemsInput",
+      "output": "openlms.v1.GradeGetGradeItemsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_grade_get_grades",
+      "mode": "strict",
+      "config": "openlms.v1.GradeGetGradesConfig",
+      "input": "openlms.v1.GradeGetGradesInput",
+      "output": "openlms.v1.GradeGetGradesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_grade_get_grades_table",
+      "mode": "strict",
+      "config": "openlms.v1.GradeGetGradesTableConfig",
+      "input": "openlms.v1.GradeGetGradesTableInput",
+      "output": "openlms.v1.GradeGetGradesTableOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_grade_update_grades",
+      "mode": "strict",
+      "config": "openlms.v1.GradeUpdateGradesConfig",
+      "input": "openlms.v1.GradeUpdateGradesInput",
+      "output": "openlms.v1.GradeUpdateGradesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_add_members",
+      "mode": "strict",
+      "config": "openlms.v1.GroupAddMembersConfig",
+      "input": "openlms.v1.GroupAddMembersInput",
+      "output": "openlms.v1.GroupAddMembersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_create",
+      "mode": "strict",
+      "config": "openlms.v1.GroupCreateConfig",
+      "input": "openlms.v1.GroupCreateInput",
+      "output": "openlms.v1.GroupCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_delete",
+      "mode": "strict",
+      "config": "openlms.v1.GroupDeleteConfig",
+      "input": "openlms.v1.GroupDeleteInput",
+      "output": "openlms.v1.GroupDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_delete_members",
+      "mode": "strict",
+      "config": "openlms.v1.GroupDeleteMembersConfig",
+      "input": "openlms.v1.GroupDeleteMembersInput",
+      "output": "openlms.v1.GroupDeleteMembersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_get_course_groups",
+      "mode": "strict",
+      "config": "openlms.v1.GroupGetCourseGroupsConfig",
+      "input": "openlms.v1.GroupGetCourseGroupsInput",
+      "output": "openlms.v1.GroupGetCourseGroupsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_group_get_members",
+      "mode": "strict",
+      "config": "openlms.v1.GroupGetMembersConfig",
+      "input": "openlms.v1.GroupGetMembersInput",
+      "output": "openlms.v1.GroupGetMembersOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_h5p_get_attempts",
+      "mode": "strict",
+      "config": "openlms.v1.H5pGetAttemptsConfig",
+      "input": "openlms.v1.H5pGetAttemptsInput",
+      "output": "openlms.v1.H5pGetAttemptsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_h5p_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.H5pGetByCourseConfig",
+      "input": "openlms.v1.H5pGetByCourseInput",
+      "output": "openlms.v1.H5pGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_h5p_get_results",
+      "mode": "strict",
+      "config": "openlms.v1.H5pGetResultsConfig",
+      "input": "openlms.v1.H5pGetResultsInput",
+      "output": "openlms.v1.H5pGetResultsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_finish_attempt",
+      "mode": "strict",
+      "config": "openlms.v1.LessonFinishAttemptConfig",
+      "input": "openlms.v1.LessonFinishAttemptInput",
+      "output": "openlms.v1.LessonFinishAttemptOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.LessonGetByCourseConfig",
+      "input": "openlms.v1.LessonGetByCourseInput",
+      "output": "openlms.v1.LessonGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_get_page_data",
+      "mode": "strict",
+      "config": "openlms.v1.LessonGetPageDataConfig",
+      "input": "openlms.v1.LessonGetPageDataInput",
+      "output": "openlms.v1.LessonGetPageDataOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_get_pages",
+      "mode": "strict",
+      "config": "openlms.v1.LessonGetPagesConfig",
+      "input": "openlms.v1.LessonGetPagesInput",
+      "output": "openlms.v1.LessonGetPagesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_launch_attempt",
+      "mode": "strict",
+      "config": "openlms.v1.LessonLaunchAttemptConfig",
+      "input": "openlms.v1.LessonLaunchAttemptInput",
+      "output": "openlms.v1.LessonLaunchAttemptOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lesson_process_page",
+      "mode": "strict",
+      "config": "openlms.v1.LessonProcessPageConfig",
+      "input": "openlms.v1.LessonProcessPageInput",
+      "output": "openlms.v1.LessonProcessPageOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lti_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.LtiGetByCourseConfig",
+      "input": "openlms.v1.LtiGetByCourseInput",
+      "output": "openlms.v1.LtiGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lti_get_tool_launch_data",
+      "mode": "strict",
+      "config": "openlms.v1.LtiGetToolLaunchDataConfig",
+      "input": "openlms.v1.LtiGetToolLaunchDataInput",
+      "output": "openlms.v1.LtiGetToolLaunchDataOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_lti_get_tool_types",
+      "mode": "strict",
+      "config": "openlms.v1.LtiGetToolTypesConfig",
+      "input": "openlms.v1.LtiGetToolTypesInput",
+      "output": "openlms.v1.LtiGetToolTypesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_block_user",
+      "mode": "strict",
+      "config": "openlms.v1.MessageBlockUserConfig",
+      "input": "openlms.v1.MessageBlockUserInput",
+      "output": "openlms.v1.MessageBlockUserOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_get_conversations",
+      "mode": "strict",
+      "config": "openlms.v1.MessageGetConversationsConfig",
+      "input": "openlms.v1.MessageGetConversationsInput",
+      "output": "openlms.v1.MessageGetConversationsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_get_messages",
+      "mode": "strict",
+      "config": "openlms.v1.MessageGetMessagesConfig",
+      "input": "openlms.v1.MessageGetMessagesInput",
+      "output": "openlms.v1.MessageGetMessagesOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_get_unread_count",
+      "mode": "strict",
+      "config": "openlms.v1.MessageGetUnreadCountConfig",
+      "input": "openlms.v1.MessageGetUnreadCountInput",
+      "output": "openlms.v1.MessageGetUnreadCountOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_mark_read",
+      "mode": "strict",
+      "config": "openlms.v1.MessageMarkReadConfig",
+      "input": "openlms.v1.MessageMarkReadInput",
+      "output": "openlms.v1.MessageMarkReadOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_send",
+      "mode": "strict",
+      "config": "openlms.v1.MessageSendConfig",
+      "input": "openlms.v1.MessageSendInput",
+      "output": "openlms.v1.MessageSendOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_message_unblock_user",
+      "mode": "strict",
+      "config": "openlms.v1.MessageUnblockUserConfig",
+      "input": "openlms.v1.MessageUnblockUserInput",
+      "output": "openlms.v1.MessageUnblockUserOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_note_create",
+      "mode": "strict",
+      "config": "openlms.v1.NoteCreateConfig",
+      "input": "openlms.v1.NoteCreateInput",
+      "output": "openlms.v1.NoteCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_note_delete",
+      "mode": "strict",
+      "config": "openlms.v1.NoteDeleteConfig",
+      "input": "openlms.v1.NoteDeleteInput",
+      "output": "openlms.v1.NoteDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_note_get",
+      "mode": "strict",
+      "config": "openlms.v1.NoteGetConfig",
+      "input": "openlms.v1.NoteGetInput",
+      "output": "openlms.v1.NoteGetOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_get_attempt_data",
+      "mode": "strict",
+      "config": "openlms.v1.QuizGetAttemptDataConfig",
+      "input": "openlms.v1.QuizGetAttemptDataInput",
+      "output": "openlms.v1.QuizGetAttemptDataOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_get_attempt_review",
+      "mode": "strict",
+      "config": "openlms.v1.QuizGetAttemptReviewConfig",
+      "input": "openlms.v1.QuizGetAttemptReviewInput",
+      "output": "openlms.v1.QuizGetAttemptReviewOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_get_attempts",
+      "mode": "strict",
+      "config": "openlms.v1.QuizGetAttemptsConfig",
+      "input": "openlms.v1.QuizGetAttemptsInput",
+      "output": "openlms.v1.QuizGetAttemptsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.QuizGetByCourseConfig",
+      "input": "openlms.v1.QuizGetByCourseInput",
+      "output": "openlms.v1.QuizGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_process_attempt",
+      "mode": "strict",
+      "config": "openlms.v1.QuizProcessAttemptConfig",
+      "input": "openlms.v1.QuizProcessAttemptInput",
+      "output": "openlms.v1.QuizProcessAttemptOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_save_attempt",
+      "mode": "strict",
+      "config": "openlms.v1.QuizSaveAttemptConfig",
+      "input": "openlms.v1.QuizSaveAttemptInput",
+      "output": "openlms.v1.QuizSaveAttemptOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_quiz_start_attempt",
+      "mode": "strict",
+      "config": "openlms.v1.QuizStartAttemptConfig",
+      "input": "openlms.v1.QuizStartAttemptInput",
+      "output": "openlms.v1.QuizStartAttemptOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_reportbuilder_get",
+      "mode": "strict",
+      "config": "openlms.v1.ReportbuilderGetConfig",
+      "input": "openlms.v1.ReportbuilderGetInput",
+      "output": "openlms.v1.ReportbuilderGetOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_reportbuilder_list",
+      "mode": "strict",
+      "config": "openlms.v1.ReportbuilderListConfig",
+      "input": "openlms.v1.ReportbuilderListInput",
+      "output": "openlms.v1.ReportbuilderListOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_reportbuilder_retrieve",
+      "mode": "strict",
+      "config": "openlms.v1.ReportbuilderRetrieveConfig",
+      "input": "openlms.v1.ReportbuilderRetrieveInput",
+      "output": "openlms.v1.ReportbuilderRetrieveOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_role_assign",
+      "mode": "strict",
+      "config": "openlms.v1.RoleAssignConfig",
+      "input": "openlms.v1.RoleAssignInput",
+      "output": "openlms.v1.RoleAssignOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_role_unassign",
+      "mode": "strict",
+      "config": "openlms.v1.RoleUnassignConfig",
+      "input": "openlms.v1.RoleUnassignInput",
+      "output": "openlms.v1.RoleUnassignOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_get_attempt_count",
+      "mode": "strict",
+      "config": "openlms.v1.ScormGetAttemptCountConfig",
+      "input": "openlms.v1.ScormGetAttemptCountInput",
+      "output": "openlms.v1.ScormGetAttemptCountOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_get_by_course",
+      "mode": "strict",
+      "config": "openlms.v1.ScormGetByCourseConfig",
+      "input": "openlms.v1.ScormGetByCourseInput",
+      "output": "openlms.v1.ScormGetByCourseOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_get_scos",
+      "mode": "strict",
+      "config": "openlms.v1.ScormGetScosConfig",
+      "input": "openlms.v1.ScormGetScosInput",
+      "output": "openlms.v1.ScormGetScosOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_get_user_data",
+      "mode": "strict",
+      "config": "openlms.v1.ScormGetUserDataConfig",
+      "input": "openlms.v1.ScormGetUserDataInput",
+      "output": "openlms.v1.ScormGetUserDataOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_insert_tracks",
+      "mode": "strict",
+      "config": "openlms.v1.ScormInsertTracksConfig",
+      "input": "openlms.v1.ScormInsertTracksInput",
+      "output": "openlms.v1.ScormInsertTracksOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_scorm_launch_sco",
+      "mode": "strict",
+      "config": "openlms.v1.ScormLaunchScoConfig",
+      "input": "openlms.v1.ScormLaunchScoInput",
+      "output": "openlms.v1.ScormLaunchScoOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_search_get_results",
+      "mode": "strict",
+      "config": "openlms.v1.SearchGetResultsConfig",
+      "input": "openlms.v1.SearchGetResultsInput",
+      "output": "openlms.v1.SearchGetResultsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_site_get_info",
+      "mode": "strict",
+      "config": "openlms.v1.SiteGetInfoConfig",
+      "input": "openlms.v1.SiteGetInfoInput",
+      "output": "openlms.v1.SiteGetInfoOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_tag_get_tags",
+      "mode": "strict",
+      "config": "openlms.v1.TagGetTagsConfig",
+      "input": "openlms.v1.TagGetTagsInput",
+      "output": "openlms.v1.TagGetTagsOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_tag_update",
+      "mode": "strict",
+      "config": "openlms.v1.TagUpdateConfig",
+      "input": "openlms.v1.TagUpdateInput",
+      "output": "openlms.v1.TagUpdateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_create",
+      "mode": "strict",
+      "config": "openlms.v1.UserCreateConfig",
+      "input": "openlms.v1.UserCreateInput",
+      "output": "openlms.v1.UserCreateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_delete",
+      "mode": "strict",
+      "config": "openlms.v1.UserDeleteConfig",
+      "input": "openlms.v1.UserDeleteInput",
+      "output": "openlms.v1.UserDeleteOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_get",
+      "mode": "strict",
+      "config": "openlms.v1.UserGetConfig",
+      "input": "openlms.v1.UserGetInput",
+      "output": "openlms.v1.UserGetOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_get_by_field",
+      "mode": "strict",
+      "config": "openlms.v1.UserGetByFieldConfig",
+      "input": "openlms.v1.UserGetByFieldInput",
+      "output": "openlms.v1.UserGetByFieldOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_search",
+      "mode": "strict",
+      "config": "openlms.v1.UserSearchConfig",
+      "input": "openlms.v1.UserSearchInput",
+      "output": "openlms.v1.UserSearchOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_user_update",
+      "mode": "strict",
+      "config": "openlms.v1.UserUpdateConfig",
+      "input": "openlms.v1.UserUpdateInput",
+      "output": "openlms.v1.UserUpdateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_webservice_get_site_info",
+      "mode": "strict",
+      "config": "openlms.v1.WebserviceGetSiteInfoConfig",
+      "input": "openlms.v1.WebserviceGetSiteInfoInput",
+      "output": "openlms.v1.WebserviceGetSiteInfoOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_xapi_get_state",
+      "mode": "strict",
+      "config": "openlms.v1.XapiGetStateConfig",
+      "input": "openlms.v1.XapiGetStateInput",
+      "output": "openlms.v1.XapiGetStateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_xapi_post_state",
+      "mode": "strict",
+      "config": "openlms.v1.XapiPostStateConfig",
+      "input": "openlms.v1.XapiPostStateInput",
+      "output": "openlms.v1.XapiPostStateOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.openlms_xapi_statement_post",
+      "mode": "strict",
+      "config": "openlms.v1.XapiStatementPostConfig",
+      "input": "openlms.v1.XapiStatementPostInput",
+      "output": "openlms.v1.XapiStatementPostOutput"
+    }
+  ]
+}
