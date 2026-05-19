@@ -1,0 +1,13 @@
+# Minimal config exercising workflow-plugin-openlms.
+# Schema-validate with: wfctl validate --skip-unknown-types examples/minimal/config.yaml
+version: 1
+modules:
+  - name: openlms-provider
+    type: openlms.provider
+    config: {}
+workflows:
+  pipeline:
+    steps:
+      - name: example
+        type: step.lms_course_create
+        config: {}
