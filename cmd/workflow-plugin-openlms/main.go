@@ -8,5 +8,5 @@ import (
 var version = "dev"
 
 func main() {
-	sdk.Serve(internal.NewOpenLMSPlugin())
+	sdk.Serve(internal.NewOpenLMSPlugin(), sdk.WithBuildVersion(sdk.ResolveBuildVersion(internal.Version)))
 }
